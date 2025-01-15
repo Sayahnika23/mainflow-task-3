@@ -1,0 +1,44 @@
+#Task 22: Matrix Multiplication
+def matrix_multiplication():
+    # Input: Two predefined matrices
+    A = [
+        [1, 2, 3],
+        [4, 5, 6],
+    ]
+    B = [
+        [7, 8],
+        [9, 10],
+        [11, 12]
+    ]
+
+    # Dimensions of the matrices
+    rows_A = len(A)
+    cols_A = len(A[0])
+    rows_B = len(B)
+    cols_B = len(B[0])
+
+    # Ensure matrix dimensions are compatible for multiplication
+    if cols_A != rows_B:
+        print("Matrix multiplication is not possible.")
+        return
+
+    # Initialize the result matrix with zeros
+    result = [[0 for _ in range(cols_B)] for _ in range(rows_A)]
+
+    # Process: Multiply matrices A and B
+    for i in range(rows_A):
+        for j in range(cols_B):
+            for k in range(cols_A):
+                result[i][j] += A[i][k] * B[k][j]
+
+    # Output: Print the resulting matrix
+    print("Resultant Matrix:")
+    for row in result:
+        print(row)
+
+# Call the function
+matrix_multiplication()
+
+Resultant Matrix:
+[58, 64]
+[139, 154]
