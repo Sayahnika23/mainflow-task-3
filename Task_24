@@ -1,0 +1,18 @@
+#Task 24: Check Anagram
+def check_anagram():
+    # Input: Taking two strings from the user
+    string1 = input("Enter the first string: ").replace(" ", "").lower()
+    string2 = input("Enter the second string: ").replace(" ", "").lower()
+    
+    # Process: Check if sorted characters of both strings are the same
+    is_anagram = sorted(string1) == sorted(string2)
+    
+    # Output: Print the result
+    print(is_anagram)
+
+# Call the function
+check_anagram()
+
+Enter the first string:  listen
+Enter the second string:  silent
+True
