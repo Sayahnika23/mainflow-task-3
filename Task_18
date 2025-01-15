@@ -1,0 +1,20 @@
+#Task 18: Swap Two Numbers
+def swap_numbers():
+    # Input: Taking two numbers from the user
+    a = int(input("Enter the first number (a): "))
+    b = int(input("Enter the second number (b): "))
+    
+    # Process: Swap using arithmetic operations
+    a = a + b
+    b = a - b
+    a = a - b
+    
+    # Output: Print the swapped values
+    print(f"After swapping: a = {a}, b = {b}")
+
+# Call the function
+swap_numbers()
+
+Enter the first number (a):  5
+Enter the second number (b):  10
+After swapping: a = 10, b = 5
