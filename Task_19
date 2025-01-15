@@ -1,0 +1,18 @@
+#Task 19: Check substring
+def check_substring():
+    # Input: Taking two strings from the user
+    s1 = input("Enter the main string (s1): ")
+    s2 = input("Enter the substring (s2): ")
+    
+    # Process: Check if s2 is a substring of s1
+    is_substring = s2 in s1
+    
+    # Output: Print the result
+    print(is_substring)
+
+# Call the function
+check_substring()
+
+Enter the main string (s1):  hello world
+Enter the substring (s2):  world
+True
