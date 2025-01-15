@@ -1,0 +1,16 @@
+#Task 20: Decimal to Binary
+def decimal_to_binary():
+    # Input: Taking a decimal number from the user
+    n = int(input("Enter a decimal number: "))
+    
+    # Process: Convert to binary using bin() and remove the '0b' prefix
+    binary_representation = bin(n)[2:]
+    
+    # Output: Print the binary equivalent
+    print(f"Binary representation: {binary_representation}")
+
+# Call the function
+decimal_to_binary()
+
+Enter a decimal number:  45
+Binary representation: 101101
